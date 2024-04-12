@@ -1,0 +1,69 @@
+@media (max-width:600px) {
+    .home-box{
+        display: block;
+        text-align: center;
+    }
+
+    .skill-box{
+        display: block;
+    }
+    .subskill{
+       display: block;
+       position: unset;
+    }
+    .social {
+        margin: 0 auto; 
+      
+       align-items: center;
+       display: flex;
+       justify-content: center;
+      
+      
+   }
+   
+    
+}
+
+.slider-container {
+    position: relative;
+    width: 80%;
+    margin: 50px auto;
+}
+
+.slider {
+    display: flex;
+    overflow-x: hidden;
+}
+
+.project {
+    flex: 0 0 auto;
+    width: 100%;
+    display: block;
+    margin: 40px;
+    padding: 100px;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}

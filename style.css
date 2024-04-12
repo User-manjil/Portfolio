@@ -1,0 +1,396 @@
+:root{
+    /* Color **** */
+    --main-cc:#B4ADEA;
+    --font-mc:#50514F;
+    --font-sc:#626461 ;
+    --white-cc:#FDFFF7;
+
+
+    /* *** font **  */
+    --fnt-fmly: "Smooch Sans", sans-serif;
+    --fnt-thin:400;
+    --fnt-reg:700;
+    --fnt-bld:900;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fnt-fmly);
+   
+}
+.container{
+    width: 100%;
+
+    background-color: var(--white-cc);
+    padding: 10px;
+    margin: 0;
+} 
+ 
+
+
+/* ********** home section *************  */
+
+.home-page{
+    width: 100%;
+    height: 100vh;
+
+}
+
+/* **** nav bar ***  */
+.navbar{
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color:#B4ADEA ;
+    font-family: var(--fnt-fmly);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 20px;
+    align-items: center;
+    position: fixed;
+    z-index: 23;
+    opacity: 80%;
+   
+  
+}
+.logo{
+    font-weight:var(--fnt-bld);
+    font-size: 23px;
+    margin: 0 69px;
+}
+.logo a{
+    color: var(--font-mc);
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+.logo a:hover{
+    color: var(--font-sc);
+}
+.options{
+    display: flex;
+}
+.options ul {
+    display: flex;
+    list-style:none;
+}
+.options ul li {
+    padding: 10px;
+    color: var(--font-mc);
+    font-size:clamp(16px,19px,21px);
+}
+.options ul li a {
+    color: var(--font-mc);
+    text-decoration:none ;
+    font-size: 20px;
+    position: relative;
+    font-weight: var(--fnt-reg);
+}
+.options ul li a::before{
+    content: "";
+    width: 100%;
+    background-color:var(--font-sc) ;
+    position: absolute;
+    bottom: 0;
+    height: 1px ;
+    transform: scaleX(0);
+    transform-origin:left ;
+    transition: .3s;
+
+}
+.options ul li a:hover::before{
+    transform: scaleX(1);
+}
+
+.options ul li a:hover{
+    color: var(--font-sc);
+}
+.options ul li i{
+    display: none;
+}
+.ham-menu{
+    color: var(--font-mc);
+}
+.ham-menu i{
+    display: none;
+}
+
+
+/* **home box**  */
+.home-box{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    
+    
+}
+.home-box-text{
+    padding:45px ;
+    margin-right: 80px;
+    
+
+
+}
+.txt-1 span1 {
+    position: relative;
+}
+.txt-1 span1::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: #B4ADEA;
+    bottom: 0;
+}
+.txt-1 span1::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius:50% ;
+    background-color: #B4ADEA;
+    bottom: 0;
+    margin: -2px -5px;
+}
+
+
+.txt-1{
+    font-weight: var(--fnt-reg);
+    font-size: 40px;
+    color: var(--font-mc);
+
+}
+.txt-1 span{
+    color: var(--main-cc);
+   
+}
+.txt-2 {
+    font-size: 20px;
+    color: var(--font-mc);
+}
+.home-box-img{
+    width: 350px;
+    height: 350px;
+
+}
+.home-box-img img{
+    width: 100%;
+    height: 100%;
+
+}
+.social {
+     margin: 0 300px; 
+   
+    align-items: center;
+    display: flex;
+    left: 0;
+   
+}
+
+.social ul{
+    display: flex;
+    list-style:none;
+    align-items: center;
+
+}
+.social-opt li{
+    padding: none;
+}
+.social-opt  li {
+    padding: 10px;
+}.social-opt  li i {
+   color: var(--font-mc);
+    
+}
+
+
+/* **** heading design for all **** */
+.heading{
+    display: flex;
+    justify-content: center;
+    margin-bottom:  20px;
+}
+.heading h1{
+    font-family: var(--fnt-fmly);
+    font-weight: var(--fnt-reg);
+    color: var(--font-mc);
+    font-size: 30px;
+    position: relative;
+}
+
+.heading h1::before{
+    content: '';
+    position: absolute;
+    width:100%;
+    height: 4px;
+    background-color: #B4ADEA;
+    bottom: 0;
+}
+.heading h1::after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius:50% ;
+    background-color: #B4ADEA;
+    bottom: 0;
+    margin: -2px -5px;
+}
+.projects{
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+.heading{
+    width: 100%;
+    height: auto;
+    margin: 10px;
+
+}
+/* *****************skills************* */
+.skill{
+    width: 100%;
+    height: auto;
+   
+}
+.skill-box{
+    margin-top: 30px;
+    padding: 30px;
+   
+    height: 500px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: space-evenly;
+    color: var(--font-mc);
+    
+
+}
+
+.boxes {
+    position: relative;
+    transform: .6s ease;
+    
+}
+.boxes h3::before{
+    margin: 0 -10px;
+}
+.boxes h3:hover::before{
+    content: '';
+    width: 10px;
+    height: 2px;
+    background-color: var(--font-mc);
+    position: absolute;
+    bottom: 0;
+    margin: 0 ;
+}
+
+.subskill{
+    display: none;
+    position: absolute;
+    
+}
+.boxes:hover .subskill{
+    display: block;
+}
+.about{
+    width: 100%;
+    height: 100vh;
+    display: block;
+   
+
+}
+.about-box{
+    width: 500px;
+    height: 400px;
+    margin: auto;
+    padding: 50px;
+   
+}
+.img-box{
+    max-width: 250px;
+    max-height: 250px;
+    margin: auto;
+    border: 10px solid var(--main-cc);
+    border-radius: 50%;
+
+}
+.img-box img{
+    width: 100%;
+    height: 100%;
+    
+    
+    filter: grayscale(1);
+    border-radius: 50%;
+
+}
+
+.abt-text-box{
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+.abt-text-box h2{
+    font-size: 24px;
+
+}
+.abt-text-box h6{
+    font-weight: var(--fnt-thin);
+    font-size: 20px;
+}
+
+
+.contact{
+    width: 100%;
+    height: 100vh;
+}
+.contact-box{
+    width: 500px;
+    height: auto;
+    background-color: var(--main-cc);
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius:19px ;
+    padding: 25px;
+}
+
+.inputs-box{
+    display: block;
+    width: 90%;
+    height: auto;
+}
+.inputs-box input, .inputs-box textarea{
+    font-size: 18px;
+    width: 220px;
+    background-color: var(--white-cc);
+    color: #50514F;
+    outline: none;
+    border: none;
+    padding:10px;
+    margin: 6px;
+    font-weight: var(--fnt-reg);
+    border-radius: 3px;
+}
+.inputs-box textarea{
+    resize: none;
+}
+label{
+    text-align: center;
+    display: flex;
+}
+.inputs-box button {
+    display: flex;
+    padding: 10px;
+    margin: auto;
+    font-size: 16px;
+    background-color: var(--white-cc);
+    color: var(--font-mc);
+    border: none;
+
+
+}

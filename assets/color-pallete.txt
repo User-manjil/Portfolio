@@ -1,0 +1,20 @@
+#B4ADEA purple like
+#50514F grey like
+#626461 dim grey
+#FDFFF7 white like
+
+## font family
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.smooch-sans-<uniquifier> {
+  font-family: "Smooch Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
