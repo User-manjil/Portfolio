@@ -25,16 +25,16 @@
 <body>
     <div class="container">
         
-        <section class="home-page">
+        <section id="home" class="home-page">
             <div class="navbar" id="navbar">
                 <div class="logo" id="logo"> <a href="#"> Portfolio.</a></div>
                 <div class="options" id="options">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Skills</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#project">Projects</a></li>
+                        <li><a href="#skill">Skills</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
                         <li><i class="fa-solid fa-xmark"></i></li>
                     </ul>
                 </div>
@@ -65,19 +65,22 @@
             </div> 
         </section>
 
-        <section class="projects">
+        <section   id="project" class="projects">
             <div class="heading"><h1>Projects </h1></div>
 
             <div class="slider-container">
                 <div class="slider">
                     <div class="project">
-                        <img src="img/graphic-design-office.png" alt="Project 1">
+                        <img src="img/Business-card.jpg" alt="Project 1">
                     </div>
                     <div class="project">
-                        <img src="img/video editing.png" alt="Project 2">
+                        <img src="img/Coke Ad.jpg" alt="Project 2">
                     </div>
                     <div class="project">
                         <img src="img/gymbro.png" alt="Project 3">
+                    </div> 
+                    <div class="project">
+                        <img src="img/pizza-poster.png" alt="Project 4">
                     </div>
                 </div>
                 <button class="prev" onclick="prevSlide()">&#10094;</button>
@@ -91,7 +94,7 @@
                 </div>
             </div>
         </section>
-        <section class="skill">
+        <section id="skill" class="skill">
             <div class="heading"><h1>Skills</h1></div>
             <div class="skill-box">
                 <div class="boxes box-1"><h3>Graphics</h3>
@@ -133,14 +136,14 @@
                     </div>
             </div>
         </section>
-        <section class="about">
+        <section id="about" class="about">
             <div class="heading"><h1>About</h1></div>
             <div class="about-box"><div class="img-box"><img src="img/about-img.jpg" alt="manjil's image"></div>
             <div class="abt-text-box"><h2>Hi I am Manjil.</h2> <br>
                 <h6>I am Tech enthusiast. I love Coding, watching movies and reading manga .</h6></div>
         </div>
         </section>
-        <section class="contact">
+        <section  id="contact" class="contact">
             <div class="heading"><h1>Contact</h1></div>
             <div class="contact-box">
                 <form action="hero()">

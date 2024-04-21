@@ -26,8 +26,10 @@
 
 .slider-container {
     position: relative;
-    width: 80%;
+    max-width: 500px;
+    max-height: 400px;
     margin: 50px auto;
+    
 }
 
 .slider {
@@ -38,14 +40,15 @@
 .project {
     flex: 0 0 auto;
     width: 100%;
+    height: 100%;
     display: block;
     margin: 40px;
-    padding: 100px;
+   padding: 100px;
 }
 
 .project img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 .prev, .next {
